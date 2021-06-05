@@ -15,7 +15,7 @@ jobs:
         run: npm i
       - name: Run tests
         run: npm run test -- --ci --reporters=default --reporters=jest-junit
-      - name: Reports the results of tests
+      - name: Reports the wordsUniques of tests
         uses: IgnusG/jest-report-action@v2.3.3
         if: always()
         with:
